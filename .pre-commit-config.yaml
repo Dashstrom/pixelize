@@ -1,0 +1,28 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: debug-statements
+      - id: check-yaml
+      - id: check-json
+        exclude: "^.vscode"
+      - id: check-toml
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v3.25.0
+    hooks:
+      - id: commitizen
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.5.5
+    hooks:
+      - id: remove-crlf
+        exclude: "(\\.bat|\\.cmd|\\.ps1)$"
+  - repo: local
+    hooks:
+    - id: poe-format
+      name: ruff linter, ruff formatter and mypy
+      entry: poetry run poe format
+      language: system
+      pass_filenames: false
+      types: [python]
