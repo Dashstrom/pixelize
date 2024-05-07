@@ -50,6 +50,12 @@ from `PyPI <https://pypi.org/project>`_
   pipx ensurepath
   pipx install pixelize
 
+You can also install gpu support for rembg dependency using:
+
+..  code-block:: bash
+
+  pipx inject pixelize rembg[gpu]
+
 Usage
 #####
 
