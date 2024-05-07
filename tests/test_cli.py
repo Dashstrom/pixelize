@@ -46,12 +46,3 @@ def test_cli_version() -> None:
 def test_import() -> None:
     """Test if module entrypoint has correct imports."""
     import pixelize.__main__  # NoQA: F401
-
-
-def test_hello() -> None:
-    """Test command hello."""
-    name = "A super secret name"
-    stdout = io.StringIO()
-    with contextlib.redirect_stdout(stdout):
-        entrypoint(("hello", "--name", name))
-    assert name in stdout.getvalue()

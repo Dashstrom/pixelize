@@ -8,8 +8,8 @@ from .core import (
     __maintainer__,
     __summary__,
     __version__,
-    hello,
 )
+from .pixelize import pixelize
 
 __all__ = [
     "entrypoint",
@@ -19,5 +19,5 @@ __all__ = [
     "__maintainer__",
     "__summary__",
     "__version__",
-    "hello",
+    "pixelize",
 ]

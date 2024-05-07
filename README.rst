@@ -46,7 +46,9 @@ from `PyPI <https://pypi.org/project>`_
 
 ..  code-block:: bash
 
-  pip install pixelize
+  pip install pipx
+  pipx ensurepath
+  pipx install pixelize
 
 Usage
 #####
@@ -55,6 +57,24 @@ Usage
 
   pixelize --version
   pixelize --help
+
+..  code-block:: bash
+
+  pixelize \
+    -i ./docs/examples/car.jpg \
+    --height 128 \
+    --crop 0x80+136x216 \
+    --scale 2 \
+    --color-reduction 4 \
+    --output-dir ./docs/examples/pixelized
+
+..  code-block:: bash
+
+  pixelize \
+    -i ./docs/examples/cat.bmp \
+    --height 32 \
+    --border \
+    --output-dir ./docs/examples/pixelized
 
 Development
 ###########

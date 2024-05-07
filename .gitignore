@@ -108,3 +108,6 @@ public/
 
 # Ruff cache
 .ruff_cache/
+
+# Default output
+/pixelized/
