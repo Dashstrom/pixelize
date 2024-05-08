@@ -5,25 +5,27 @@
 pixelize
 ********
 
-.. image:: https://github.com/Dashstrom/pixelize/actions/workflows/docs.yml/badge.svg
+|ci-docs| |ci-lint| |ci-tests| |pypi| |versions| |discord| |license|
+
+.. |ci-docs| image:: https://github.com/Dashstrom/pixelize/actions/workflows/docs.yml/badge.svg
   :target: https://github.com/Dashstrom/pixelize/actions/workflows/docs.yml
   :alt: CI : Docs
-.. image:: https://github.com/Dashstrom/pixelize/actions/workflows/lint.yml/badge.svg
+.. |ci-lint| image:: https://github.com/Dashstrom/pixelize/actions/workflows/lint.yml/badge.svg
   :target: https://github.com/Dashstrom/pixelize/actions/workflows/lint.yml
   :alt: CI : Lint
-.. image:: https://github.com/Dashstrom/pixelize/actions/workflows/tests.yml/badge.svg
+.. |ci-tests| image:: https://github.com/Dashstrom/pixelize/actions/workflows/tests.yml/badge.svg
   :target: https://github.com/Dashstrom/pixelize/actions/workflows/tests.yml
   :alt: CI : Tests
-.. image:: https://img.shields.io/pypi/v/pixelize.svg
+.. |pypi| image:: https://img.shields.io/pypi/v/pixelize.svg
   :target: https://pypi.org/project/pixelize
   :alt: PyPI : pixelize
-.. image:: https://img.shields.io/pypi/pyversions/pixelize.svg
+.. |versions| image:: https://img.shields.io/pypi/pyversions/pixelize.svg
   :target: https://pypi.org/project/pixelize
   :alt: Python : versions
-.. image:: https://img.shields.io/badge/Discord-Pixelize-5865F2?style=flat&logo=discord&logoColor=white
+.. |discord| image:: https://img.shields.io/badge/Discord-Dashstrom-5865F2?style=flat&logo=discord&logoColor=white
   :target: https://dsc.gg/dashstrom
   :alt: Discord
-.. image:: https://img.shields.io/badge/license-MIT-green.svg
+.. |license| image:: https://img.shields.io/badge/license-MIT-green.svg
   :target: https://github.com/Dashstrom/pixelize/blob/main/LICENSE
   :alt: License : MIT
 
