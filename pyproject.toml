@@ -67,7 +67,6 @@ classifiers = [
   "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3 :: Only",
 
   # What is the language used in the project
@@ -86,7 +85,7 @@ packages = [
 
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.13"
+python = ">=3.8,<3.12"
 
 typing-extensions = ">=4.8.0"
 
@@ -103,10 +102,12 @@ sphinxcontrib-mermaid = { version = "0.9.2", optional = true }
 poethepoet = { version = "0.26.1", optional = true }
 commitizen = { version = "3.25.0", optional = true }
 types-pillow = { version = "^10", optional = true }
-numpy = {version = "<1.25", python = "<3.9"}
+numpy = [
+  {version = "<1.25", python = "<3.9"},
+  {version = "*", python = ">=3.9"},
+]
 pillow = "^10"
 rembg = "^2.0.0"
-setuptools = {version = "*", python = ">=3.12"}
 
 [tool.poetry.extras]
 test = ["pytest", "pytest-mock"]

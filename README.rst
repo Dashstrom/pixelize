@@ -64,15 +64,26 @@ Usage
   pixelize --version
   pixelize --help
 
+Cropping
+********
+
 ..  code-block:: bash
 
   pixelize \
     -i ./docs/examples/car.jpg \
     --height 128 \
     --crop 0x80+136x216 \
-    --scale 2 \
     --color-reduction 4 \
     --output-dir ./docs/examples/pixelized
+
+.. image:: https://raw.githubusercontent.com/Dashstrom/pixelize/main/docs/examples/car.jpg
+   :width: 128
+
+.. image:: https://raw.githubusercontent.com/Dashstrom/pixelize/main/docs/examples/pixelized/car.pix.png
+   :width: 128
+
+Border
+******
 
 ..  code-block:: bash
 
@@ -81,6 +92,30 @@ Usage
     --height 32 \
     --border \
     --output-dir ./docs/examples/pixelized
+
+.. image:: https://raw.githubusercontent.com/Dashstrom/pixelize/main/docs/examples/cat.bmp
+   :width: 128
+
+.. image:: https://raw.githubusercontent.com/Dashstrom/pixelize/main/docs/examples/pixelized/cat.pix.png
+   :width: 128
+
+Border
+******
+
+..  code-block:: bash
+
+  pixelize \
+    -i swing.jpg \
+    --height 128 \
+    --rembg \
+    --border \
+    --color-reduction 5
+
+.. image:: https://raw.githubusercontent.com/Dashstrom/pixelize/main/docs/examples/swing.jpg
+   :width: 128
+
+.. image:: https://raw.githubusercontent.com/Dashstrom/pixelize/main/docs/examples/pixelized/swing.pix.png
+   :width: 128
 
 Development
 ###########
@@ -107,7 +142,7 @@ for work with this project.
   poetry shell
 
 Poe
-********
+***
 
 Poe is available for help you to run tasks.
 
