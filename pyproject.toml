@@ -15,7 +15,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "pixelize"
-version = "0.0.1"
+version = "0.0.2"
 description = "Turn images into pixel arts."
 license = "MIT"
 authors = [
