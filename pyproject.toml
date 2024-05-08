@@ -27,9 +27,13 @@ maintainers  = [
 readme = "README.rst"
 homepage = "https://github.com/Dashstrom/pixelize"
 repository = "https://github.com/Dashstrom/pixelize"
-documentation = "https://github.com/Dashstrom/pixelize"
+documentation = "https://dashstrom.github.io/pixelize"
 keywords = [
   "python",
+  "cli",
+  "script",
+  "pixel-art",
+  "image-to-image",
 ]
 
 # See https://pypi.org/classifiers/
