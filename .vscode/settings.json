@@ -81,6 +81,7 @@
     "mypy",
     "ndarray",
     "noqa",
+    "pathlib",
     "pipx",
     "pixelize",
     "pixelized",

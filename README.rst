@@ -2,33 +2,27 @@
   :language: bash
 
 ********
-Pixelize
+pixelize
 ********
 
 .. image:: https://github.com/Dashstrom/pixelize/actions/workflows/docs.yml/badge.svg
   :target: https://github.com/Dashstrom/pixelize/actions/workflows/docs.yml
   :alt: CI : Docs
-
 .. image:: https://github.com/Dashstrom/pixelize/actions/workflows/lint.yml/badge.svg
   :target: https://github.com/Dashstrom/pixelize/actions/workflows/lint.yml
   :alt: CI : Lint
-
 .. image:: https://github.com/Dashstrom/pixelize/actions/workflows/tests.yml/badge.svg
   :target: https://github.com/Dashstrom/pixelize/actions/workflows/tests.yml
   :alt: CI : Tests
-
 .. image:: https://img.shields.io/pypi/v/pixelize.svg
   :target: https://pypi.org/project/pixelize
   :alt: PyPI : pixelize
-
 .. image:: https://img.shields.io/pypi/pyversions/pixelize.svg
   :target: https://pypi.org/project/pixelize
   :alt: Python : versions
-
 .. image:: https://img.shields.io/badge/Discord-Pixelize-5865F2?style=flat&logo=discord&logoColor=white
   :target: https://dsc.gg/dashstrom
   :alt: Discord
-
 .. image:: https://img.shields.io/badge/license-MIT-green.svg
   :target: https://github.com/Dashstrom/pixelize/blob/main/LICENSE
   :alt: License : MIT
@@ -64,8 +58,8 @@ Usage
   pixelize --version
   pixelize --help
 
-Cropping
-********
+Example: Cropping
+*****************
 
 ..  code-block:: bash
 
@@ -82,8 +76,8 @@ Cropping
 .. image:: https://raw.githubusercontent.com/Dashstrom/pixelize/main/docs/examples/pixelized/car.pix.png
    :width: 128
 
-Border
-******
+Example: Border
+***************
 
 ..  code-block:: bash
 
@@ -99,8 +93,8 @@ Border
 .. image:: https://raw.githubusercontent.com/Dashstrom/pixelize/main/docs/examples/pixelized/cat.pix.png
    :width: 128
 
-Border
-******
+Example: Rembg
+**************
 
 ..  code-block:: bash
 
@@ -116,6 +110,30 @@ Border
 
 .. image:: https://raw.githubusercontent.com/Dashstrom/pixelize/main/docs/examples/pixelized/swing.pix.png
    :width: 128
+
+Example: Module
+***************
+
+..  code-block:: python
+
+  from pixelize import pixelize
+  from pathlib import Path
+  from PIL import Image
+
+  image_path = "image.png"
+
+  # Using str
+  im = pixelize(image_path)
+
+  # Using pathlib.Path
+  im = pixelize(Path(image_path))
+
+  # Using stream
+  with open("image.png", "rb") as file:
+    im = pixelize(file)
+
+  # using Pillow
+  im= pixelize(Image.open("image.png"))
 
 Development
 ###########
