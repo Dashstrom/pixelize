@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-20.04
     environment:
       name: pypi
-      url: https://pypi.org/p/offline-translator
+      url: https://pypi.org/p/pixelize
     permissions:
       id-token: write
     steps:
