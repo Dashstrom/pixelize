@@ -1,6 +1,6 @@
 """Module for perform functional test."""
 
-import sys
+import platform
 from pathlib import Path
 
 import pytest
@@ -13,7 +13,10 @@ def test_functional(resources: Path) -> None:
     pixelize(image=resources / "cat.bmp", height=32, border=True)
 
 
-@pytest.mark.skipif(sys.platform != "darwin", reason="does not run on macos")
+@pytest.mark.skipif(
+    platform.system() != "Darwin",
+    reason="does not run on macos",
+)
 def test_functional_rembg(resources: Path) -> None:
     """Run test for check if rembg can be used."""
     pixelize(image=resources / "cat.bmp", height=32, border=True, rembg=True)
