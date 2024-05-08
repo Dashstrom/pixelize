@@ -34,10 +34,15 @@ Description
 
 Turn images into pixel arts.
 
+Documentation
+#############
+
+Documentation is available on https://dashstrom.github.io/pixelize
+
 Installation
 ############
 
-You can install :bash:`pixelize` via `pip <https://pypi.org/project/pip/>`_
+You can install :bash:`pixelize` using `pip <https://pypi.org/project/pip/>`_
 from `PyPI <https://pypi.org/project>`_
 
 ..  code-block:: bash
