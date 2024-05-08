@@ -35,6 +35,9 @@ jobs:
           virtualenvs-create: true
           virtualenvs-in-project: true
           installer-parallel: true
+      - name: Install onnxruntime on macos-12
+        if: ${{ runner.os }} == 'macos-12'
+        run: brew install onnxruntime
       - name: Load cached venv
         id: cached-poetry-dependencies
         uses: actions/cache@v3
