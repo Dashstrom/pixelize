@@ -60,7 +60,14 @@ def pixelize(  # noqa: C901, PLR0912, PLR0913, PLR0915
     if rembg:
         from rembg import remove
 
-        frame = remove(frame).copy()
+        frame = remove(
+            frame,
+            post_process_mask=True,
+            alpha_matting=True,
+            alpha_matting_foreground_threshold=240,
+            alpha_matting_background_threshold=20,
+            alpha_matting_erode_size=60,
+        ).copy()
 
     # Remove alpha pixel
     for y in range(image.size[1]):

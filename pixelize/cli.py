@@ -126,6 +126,7 @@ def entrypoint(argv: Optional[Sequence[str]] = None) -> None:
                 image=path,
                 output=output,
                 inner=args.inner,
+                rembg=args.rembg,
                 color_reduction=args.color_reduction,
                 alpha_min=args.alpha_min,
                 alpha_max=args.alpha_max,
