@@ -223,7 +223,7 @@ imports = ["shutil", "sys", "pathlib"]
 
 [tool.pytest.ini_options]
 log_cli = true
-log_cli_level = "DEBUG"
+log_cli_level = "INFO"
 addopts = "-vv --doctest-modules"
 doctest_optionflags = "DONT_ACCEPT_TRUE_FOR_1 NORMALIZE_WHITESPACE IGNORE_EXCEPTION_DETAIL ELLIPSIS"
 #asyncio_mode = "auto"
