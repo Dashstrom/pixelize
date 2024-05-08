@@ -1,6 +1,6 @@
 """Module for perform functional test."""
 
-import platform
+import sys
 from pathlib import Path
 
 import pytest
@@ -14,7 +14,7 @@ def test_functional(resources: Path) -> None:
 
 
 @pytest.mark.skipif(
-    platform.system() != "Darwin",
+    sys.platform == "darwin",
     reason="does not run on macos",
 )
 def test_functional_rembg(resources: Path) -> None:

@@ -134,8 +134,8 @@ Example: Module
   with open("image.png", "rb") as file:
     im = pixelize(file)
 
-  # using Pillow
-  im= pixelize(Image.open("image.png"))
+  # Using Pillow
+  im = pixelize(Image.open("image.png"))
 
 Development
 ###########
